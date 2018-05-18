@@ -10,13 +10,13 @@ def readFile(filename):
     infile.close()
     return dict
 
-def findMean(scores):
+def findMean(list):
     sum = 0.0
-    if len(scores) == 0:
+    if len(list) == 0:
         return sum
-    for num in scores:
+    for num in list:
         sum = sum + num
-    return sum/len(scores)
+    return sum/len(list)
     
     
 def main():
