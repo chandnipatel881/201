@@ -12,6 +12,8 @@ def readFile(filename):
 
 def findMean(scores):
     sum = 0.0
+    if len(scores) == 0:
+        return sum
     for num in scores:
         sum = sum + num
     return sum/len(scores)
